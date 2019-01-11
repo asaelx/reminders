@@ -1,0 +1,96 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ecf0f1;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.97) translateY(.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.title {
+    animation: enter 1s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #2c3e50;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    animation: enter 1s .1s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.5em;
+    padding: 0 3rem;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.author {
+    animation: enter 1s .1s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.reload {
+    animation: zoom .8s .3s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+}
+
+.reload-btn {
+    font-family: 'Merriweather', serif;
+}
+
+.love {
+    color: #e74c3c;
+}
+
+#reminder {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#reminder img {
+    animation: zoom .8s .3s ease-in-out forwards;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+footer {
+    animation: zoom .8s .3s ease-in-out forwards;
+    opacity: 0;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Merriweather', serif;
+    color: #34495e;
+}
